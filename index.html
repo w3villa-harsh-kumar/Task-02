@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome icon CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Task 02</title>
+  </head>
+  <body>
+    <header class="header__section" id="header__section">
+      <div class="logo">
+        <div class="box"></div>
+        <a href="#" id="logo"> create </a>
+      </div>
+      <div class="navigation">
+        <nav class="navbar">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="#">About Us</a></li>
+            <li class="nav__link"><a href="#">Products</a></li>
+            <li class="nav__link"><a href="#">Press</a></li>
+            <li class="nav__link"><a href="#">Careers</a></li>
+            <li class="nav__link"><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="search__icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section__container1">
+        <div class="main__heading">
+          create <br />
+          software <br />
+          solution
+        </div>
+        <div class="main__text">
+          At your price bussiness <br />
+          travel solution
+        </div>
+        <div class="write__to__us">
+          <input
+            type="text"
+            class="write__to__us__input"
+            placeholder="Write to us"
+          />
+          <div class="play__btn">
+            <i class="fa-solid fa-play"></i>
+          </div>
+        </div>
+        <div class="right__image">
+          <img
+            src="https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?b=1&s=170667a&w=0&k=20&c=ScoPcmVztzvi771qPgGSvhA50WDt7gOM7361Ei0ODww="
+            alt="right corner image"
+          />
+        </div>
+      </section>
+
+      <section class="section__container2">
+        <div class="left">
+          <div class="upper">
+            <div class="box box1">
+              <span>
+                About <br />
+                Us
+              </span>
+            </div>
+            <div class="box box2">
+              <span>
+                Contact <br />
+                Us
+              </span>
+            </div>
+          </div>
+          <div class="lower">
+            <span>
+              Know <br />
+              Our <br />
+              Products
+            </span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="section__heading">
+            Never doubt that a small group of <br />
+            thoughtful, committed people can
+            <br />
+            change the world.
+          </div>
+          <p class="text">
+            Our endeavor has been to create world class travel and aviation
+            technology solutions. We believe in building strong partnerships
+            with our customers to ensure that we are able to deliver a robust
+            and cost efficient solution to them.
+          </p>
+          <div class="write__to__us">
+            <input
+              type="text"
+              class="write__to__us__input"
+              placeholder="Read more"
+            />
+            <div class="play__btn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    let navbar = document.getElementById("header__section");
+    let logoColor = document.getElementById("logo");
+    window.addEventListener("scroll", () => {
+      if (scrollY >= 200) {
+        navbar.style.backgroundColor = "#2c2c2c";
+        navbar.style.transition = "all .5s";
+        navbar.style.color = "white";
+        logoColor.style.color = "white";
+        console.log("I'm in if");
+      } else {
+        console.log("I'm in else");
+        navbar.style.backgroundColor = "transparent";
+        logoColor.style.color = "black";
+      }
+    });
+  </script>
+</html>
